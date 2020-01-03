@@ -22,22 +22,25 @@
       <li><a class="menu__item" href="contacts.html">Контакти</a></li>
     </ul>
     </div>
+  <img src="img/logo.png" alt="Логотип" class="logotype">
   </nav>
   <header>
     <h1>Foxprint</h1>
-    <p>Студія 3D друку</p>
+    <p></strong>Студія 3D друку</strong></p>
   </header>
-  <section>
+  <section class="about-technology">
     <h2>Про технологію</h2>
-    <p>3D друк - пошарове створення фізичного об'єкту за допомогою 3D принтера на основі тривимірної комп'ютерної моделі. Технологія широко застосовується в архітектурі, промисловості, маркетингу та мистецтві.</p>
+    <p class="about-technology">3D друк - пошарове створення фізичного об'єкту за допомогою 3D принтера на основі тривимірної комп'ютерної моделі. Технологія широко застосовується в архітектурі, промисловості, маркетингу та мистецтві.</p>
     <img src="img/printer.jpg" alt="3D принтер">
   </section>
   <main>
     <h3>Про нас:</h3>
-    <p>Команда FoxPrint реалізує задачі любого рівня складності! До спектру наших послуг входять 3D роздрук,3D моделювання, комплексні моделі, муляжі, обробка та фарбування надрукованих виробів. Ви завжди можете звернутись до нас і отримати додаткову інформацію! З нами ви отримаєте:</p>
-    <img src="img/handshake.png" alt="Професійні консультації">Професійні консультації
-    <img src="img/gears.jpg" alt="Високоточне обладнання">Високоточне обладнання
-    <img src="img/time.png" alt="Швидкий та чіткий термін виконання замовлень">Швидкий та чіткий термін виконання замовлень
+    <p class="about-us">Команда FoxPrint реалізує задачі любого рівня складності! До спектру наших послуг входять 3D роздрук,3D моделювання, комплексні моделі, муляжі, обробка та фарбування надрукованих виробів. Ви завжди можете звернутись до нас і отримати додаткову інформацію! З нами ви отримаєте:</p>
+    <div class="pics-about-us">
+    <img src="img/handshake.png" alt="Професійні консультації" class="img-about-us">Професійні консультації
+    <img src="img/gears.jpg" alt="Високоточне обладнання" class="img-about-us">Високоточне обладнання
+    <img src="img/time.png" alt="Швидкий та чіткий термін виконання замовлень" class="img-about-us">Швидкий та чіткий термін виконання замовлень
+    </div>
   </main>
   <section>
     <h4>Наші останні роботи:</h4>
@@ -45,35 +48,35 @@
     <p> Тут мають скроллитись останні фото з Галереї, але я ще не знаю, як це зробити :С</p>
   </section>
   <form method="GET" action="order.html">
-    <button type="submit">Оформити замовлення</button>
+    <button type="submit" class="button">Оформити замовлення</button>
   </form>
   <form method="GET" action="consultation.html">
-    <button type="submit">Отримати консультацію</button>
+    <button type="submit" class="button">Отримати консультацію</button>
   </form>
-  <address>
+  <section>
+    <h5>Виникли питання? Будемо раді допомогти!</h5>
+    <form method="POST" action="https://formspree.io/xayqpeoz">
+      <label>Ім'я:
+     <input type="text" required name="Ім'я">
+     </label>
+     <label>Телефон або E-mail:
+     <input type="text" required name="Телефон або E-mail">
+     </label>
+     <label>Ваше питання:
+     <input type="text" required name="Ваше питання">
+     </label>
+     <input type="submit" value="Надіслати">
+    </form>
+  </section>
+  <footer>
+    <address>
     <p>
     +38 032 118 76 47<br>
     +38 044 221 88 88<br>
     <a href="foxprint@gmail.com">foxprint@gmail.com</a><br>
     м.Львів, вул. Випасова 11Б
     </p>
-  </address>
-  <footer>
-    <section>
-      <h5>Виникли питання? Будемо раді допомогти!</h5>
-      <form method="POST" action="https://formspree.io/xayqpeoz">
-        <label>Ім'я:
-        <input type="text" required name="Ім'я">
-        </label>
-        <label>Телефон або E-mail:
-        <input type="text" required name="Телефон або E-mail">
-        </label>
-        <label>Ваше питання:
-        <input type="text" required name="Ваше питання">
-        </label>
-        <input type="submit" value="Надіслати">
-      </form>
-    </section>
+    </address>
     <br>
       <p>Графік роботи:<br>пн-пт з 9:00 до 18:00</p><br>
       <p>Всі права захищені «Foxprint» Copyright © 2020</p>
