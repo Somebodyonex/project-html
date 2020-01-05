@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One|Markazi+Text|Righteous&display=swap');
-*{
+body{
     max-width: 600px;
     margin: auto;
 }
@@ -200,7 +200,7 @@ h4{
   cursor: pointer;
   font-size: 25px;
   font-family: 'Francois One', sans-serif;
-  display: inline-block;
+  display: block;
   align-items: center;
   border-color: black;
   padding: 2px;
