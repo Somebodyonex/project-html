@@ -28,11 +28,11 @@
     <h1>Foxprint</h1>
     <p>Студія 3D друку</p>
   </header>
-  <section class="about-technology">
+  <div class="about-technology">
     <h2>Про технологію</h2>
     <p class="about-technology">3D друк - пошарове створення фізичного об'єкту за допомогою 3D принтера на основі тривимірної комп'ютерної моделі. Технологія широко застосовується в архітектурі, промисловості, маркетингу та мистецтві.</p>
-    <img src="img/printer.jpg" alt="3D принтер">
-  </section>
+    <img src="img/printer.jpg" alt="3D принтер" class="picprinter">
+  </div>
   <main>
     <h3>Про нас:</h3>
     <p class="about-us">Команда FoxPrint реалізує задачі любого рівня складності! До спектру наших послуг входять 3D роздрук,3D моделювання, комплексні моделі, муляжі, обробка та фарбування надрукованих виробів. Ви завжди можете звернутись до нас і отримати додаткову інформацію! З нами ви отримаєте:</p>
@@ -42,30 +42,37 @@
     <img src="img/time.png" alt="Швидкий та чіткий термін виконання замовлень" class="img-about-us">Швидкий та чіткий термін виконання замовлень
     </div>
   </main>
-  <section>
+  <div class="lastorders">
     <h4>Наші останні роботи:</h4>
-    <img src="img/prop1.jpg" alt="Надруковане кільце з деталізованим черепом розміром з 5 копійок">
-    <p> Тут мають скроллитись останні фото з Галереї, але я ще не знаю, як це зробити :С</p>
-  </section>
+    <img src="img/prop1.jpg" alt="Надруковане кільце з деталізованим черепом розміром з 5 копійок" class="gallerypics">
+  </div>
+  <div class="order-button">
   <form method="GET" action="order.html">
     <button type="submit" class="button">Оформити замовлення</button>
   </form>
+  </div>
+  <div class="order-button">
   <form method="GET" action="consultation.html">
     <button type="submit" class="button">Отримати консультацію</button>
   </form>
+  </div>
   <section>
     <h5>Виникли питання? Будемо раді допомогти!</h5>
+    <div class="type-form">
     <form method="POST" action="https://formspree.io/xayqpeoz">
-     <label class="style-me">Ваше ім'я
+     <label>Ваше ім'я:
      <input type="text" required name="Ім'я" placeholder="Ваше ім'я" class="input-type">
      </label>
-     <label class="style-me">Телефон або E-mail:
+     <label>Телефон або E-mail:
      <input type="text" required name="Телефон або E-mail" placeholder="Телефон або E-mail" class="input-type">
      </label>
-     <label class="style-me">Ваше питання:
+     <label>Ваше питання:
      <input type="text" required name="Ваше питання" class="input-type-question">
      </label>
+     </div>
+     <div class="post-button">
      <input type="submit" value="Надіслати" class="type-post">
+    </div>
     </form>
   </section>
   <footer>
