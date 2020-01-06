@@ -213,7 +213,6 @@ h4{
 
 .button {
     background-color: #e67e00;
-    border: 1;
     border-width: 0.5px;
     color: rgb(0, 0, 0);
     width: 500px;
@@ -267,7 +266,6 @@ h5{
 .type-post{
     display: block;
     background-color: #e67e00;
-    border: 1;
     border-width: 0.5px;
     color: rgb(0, 0, 0);
     width: 300px;
