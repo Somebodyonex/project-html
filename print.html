@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/print.css">
     <title>3Dprint</title>
 </head>
 <body>
   <nav>
-    <ul class="topmenu">
-      <li><a href="index.html">Головна</a></li>
-      <li><a class="down">Послуги</a>
-        <ul class="submenu">
-          <li><a href="print.html">3D друк</a></li>
-          <li><a href="modeling.html">3D моделювання</a></li>
-        </ul>  
-      <li><a href="gallery.html">Галерея</a></li>
-      <li><a href="contacts.html">Контакти</a></li>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+      <span></span>
+      </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Головна</a></li>
+      <li><a class="menu__item" href="print.html">3D друк</a></li>
+      <li><a class="menu__item" href="modeling.html">3D моделювання</a></li>
+      <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+      <li><a class="menu__item" href="contacts.html">Контакти</a></li>
     </ul>
-    <img src="img/logo.png" alt="Логотип">
+    </div>
+  <img src="img/logo.png" alt="Логотип" class="logotype">
   </nav>
   <header>
     <h1>3D друк</h1>
   </header>
   <main>
     <h2>Стандартний FDM друк:</h2>
-    <img src="img/fdm.jpg" alt="FDM друк">
+    <img src="img/fdm.jpg" alt="FDM друк" class="fdmpic">
+    <div class="secondmethod">
     <h3>Метод пошарового наплавлення</h3>
     <p>Технологія дозволяє створювати вироби з широкого спектру матеріалів з різними характеристиками і властивостями.</p>
     <p>Висота шару:</p>
-    <ul>
+    <ul class="listnone">
       <li>0,1-0,3 мм. (100-300 мікрон)</li>
     </ul>
     <p>Область друку:</p>
-    <ul>
+    <ul class="listnone">
       <li>до 600х600х600 мм</li>
     </ul>
-    <table>
+    <img src="img/down.png" class="dropbutton">
+    <table class="droptable">
       <tr>
         <td><strong>Матеріал/Висота шару</strong></td>
         <td><strong>Стандартна якість 300 мікрон</strong></td>
@@ -68,20 +74,23 @@
         <td>від 12,3 грн/грам</td>
       </tr>
     </table>
+    </div>
     <h4>Високоточний SLA i DLP друк</h4>
-    <img src="img/sla.png" alt="SLA друк">
+    <img src="img/sla.png" alt="SLA друк" class="slapic">
     <h5>Надточний метод створення виробу</h5>
+    <div class="forthmethod">
     <p>Надточний метод створення виробу шляхом затрердіння фотополімерної смоли під впливом УФ-випромінювання. Застосовується для створення ювелірних виробів, надточних прототипів, предметів складної геометрії, мастер-моделей для лиття.</p>
       <p>Висота шару:</p>
-      <ul>
+      <ul class="listnone">
         <li>від 0,027 до 0,05мм</li>
       </ul>
       <p>Область друку:</p>
-      <ul>
+      <ul class="listnone">
         <li>від 30х50х150мм(ювелірна) до 215х135х200мм.(технічна)</li>
       </ul>
     <p>Ціна формується виходячи з багатьох факторів, таких як вага, час друку, вид фотополімерної смоли та інших. Для точної оцінки вартості виробу треба надіслати нам 3D модель в форматі .STL або .OBJ.</p>
-    <table>
+    <img src="img/down.png" class="dropbuttontwo">
+    <table class="droptabletwo">
       <tr>
         <td><strong>Матеріал/Висота шару</strong></td>
         <td><strong>50 мікрон</strong></td>
@@ -101,9 +110,10 @@
         <td>від 31 грн/грам</td>
       </tr>
     </table>
+    </div>
   </main>
   <aside>
-    <section>
+    <section class="important">
       <h6><strong>Важливо знати перед замовленням друку на 3D принтері!</strong></h6>
       <p><strong>Процент внутрішнього заповнення:</strong></p>
       <p><em>Впливає на міцність і вагу виробу</em></p>
@@ -115,9 +125,11 @@
       <p><em>Товщина стінки, як і внутрішнє заповнення, впливає на міцність і вагу виробу.</em></p>
       <p>При частковому внутрішньому заповненні моделі ми можемо підвищити міцність виробу за рахунок збільшення товщини стінки. Для виставкових макетів, прототипів, елементів декору і виробів, на які не впливають зовнішні фактори зазвичай використовується товщина стінки 0,8мм. Для виробів, які знаходитимуться під дією фізичних нагрузок, рекомендується товщина стінки 1,2мм і більше.</p>
     </section>
+    <div class="btn">
     <form method="GET" action="order.html">
-    <button type="submit">Замовити 3D друк</button>
+    <button type="submit" class="orderbutton">Замовити 3D друк</button>
     </form>
+    </div>
   </aside>
   <footer>
     <address>
@@ -131,5 +143,10 @@
     <p>Графік роботи:<br>пн-пт з 9:00 до 18:00</p><br>
     <p>Всі права захищені «Foxprint» Copyright © 2020</p>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/print.js"></script>
 </body>
 </html>
